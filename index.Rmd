@@ -12,7 +12,7 @@ One thing that people regularly do is quantify *how much* of a particular activi
 ####Online Versions
 Online versions of this report can be found at the below links:
 
-[https://github.com/jmigaleddi/practicalmachinelearning](https://github.com/jmigaleddi/practicalmachinelearning)
+[https://github.com/jmigaleddi/practicalmachinelearning](https://github.com/jmigaleddi/practicalmachinelearning)  
 [http://jmigaleddi.github.io/practicalmachinelearning/](http://jmigaleddi.github.io/practicalmachinelearning/)
 
 ####Executive Summary

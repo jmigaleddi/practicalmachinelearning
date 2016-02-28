@@ -7,7 +7,7 @@ One thing that people regularly do is quantify *how much* of a particular activi
 ####Online Versions
 Online versions of this report can be found at the below links:
 
-[https://github.com/jmigaleddi/practicalmachinelearning](https://github.com/jmigaleddi/practicalmachinelearning)
+[https://github.com/jmigaleddi/practicalmachinelearning](https://github.com/jmigaleddi/practicalmachinelearning)  
 [http://jmigaleddi.github.io/practicalmachinelearning/](http://jmigaleddi.github.io/practicalmachinelearning/)
 
 ####Executive Summary
@@ -145,9 +145,9 @@ acc.table
 
 ```
 ##                    In-Sample Accuracy Est. Out-of-Sample Accuracy
-## Class. Tree                 0.4751249                   0.5021875
-## Random Forest               1.0000000                   0.9933908
-## Bagged Class. Tree          0.9997918                   0.9858450
+## Class. Tree                 0.4975541                   0.5168100
+## Random Forest               1.0000000                   0.9933387
+## Bagged Class. Tree          0.9995316                   0.9829825
 ```
 
 ####Prediction Results
@@ -160,5 +160,5 @@ all.equal(predict(Fit.rf, test.match), predict(Fit.treebag, test.match))
 ```
 
 ```
-## [1] TRUE
+## [1] "1 string mismatch"
 ```
