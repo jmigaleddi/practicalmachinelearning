@@ -121,7 +121,7 @@ Fit.treebag <- train(train.match$classe ~ .,
                      data = train.match.corfilter)
 ```
 
-Comparing the results of the three models showed that the random forest and bagged classification tree were clearly better models. The random forest correctly predicted all of the training data, while the bagged tree missed only seven of the more than 19,000 predictions. The out-of-sample error estimates from the cross-validation were both more than 98%. Given that the random forest model performed slightly better, that model was chosen for the prediction exercise.
+Comparing the results of the three models showed that the random forest and bagged classification tree were clearly better models. The random forest correctly predicted all of the training data, while the bagged tree missed only seven of the more than 19,000 predictions. The out-of-sample accuracy estimates from the cross-validation were both more than 98% (with out-of-sample error estimates below 2%). Given that the random forest model performed slightly better, that model was chosen for the prediction exercise.
 
 
 ```r
@@ -145,9 +145,9 @@ acc.table
 
 ```
 ##                    In-Sample Accuracy Est. Out-of-Sample Accuracy
-## Class. Tree                 0.4975541                   0.5168100
-## Random Forest               1.0000000                   0.9933387
-## Bagged Class. Tree          0.9995316                   0.9829825
+## Class. Tree                 0.4975541                   0.5091098
+## Random Forest               1.0000000                   0.9940675
+## Bagged Class. Tree          0.9996357                   0.9855330
 ```
 
 ####Prediction Results
@@ -160,5 +160,5 @@ all.equal(predict(Fit.rf, test.match), predict(Fit.treebag, test.match))
 ```
 
 ```
-## [1] "1 string mismatch"
+## [1] TRUE
 ```
